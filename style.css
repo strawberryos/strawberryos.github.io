@@ -15,6 +15,10 @@ html, body {
   text-transform: uppercase;
 }
 
+.center {
+  text-align: center;
+}
+
 .section {
   padding: 5em 2em;
   margin: 0;
@@ -22,8 +26,22 @@ html, body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section, .section .main-section {
+.section.main-section {
   text-align: center;
+}
+
+.section.scrolling-section {
+  background-color: rgba(233, 233, 233, 0.95);
+  color: #111111;
+  margin: 5em auto;
+  max-width: 50em;
+}
+
+.info {
+  padding: 1em;
+  margin: 1em 2em;
+  background-color: rgba(200, 200, 200, 0.95);
+  color: #111111;
 }
 
 @media (prefers-reduced-motion: no-preference) {

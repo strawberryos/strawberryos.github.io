@@ -1,5 +1,9 @@
 $section-color: rgba(0,0,0, 0.5)
 $section-text: #eeeeee
+$secondary-color: rgba(233,233,233, 0.95)
+$secondary-text: #111111
+$info-color: rgba(200,200,200, 0.95)
+$info-text: #111111
 
 html, body
     padding: 0
@@ -12,14 +16,25 @@ html, body
     font-size: 2em
     font-weight: bold
     text-transform: uppercase
-    
+.center
+    text-align: center
 .section
     padding: 5em 2em
     margin: 0
     color: $section-text
     background-color: $section-color
-    &,.main-section
+    &.main-section
         text-align: center
+    &.scrolling-section
+        background-color: $secondary-color
+        color: $secondary-text
+        margin: 5em auto
+        max-width: 50em
+.info  
+    padding: 1em
+    margin: 1em 2em
+    background-color: $info-color
+    color: $info-text
 
 
 @media (prefers-reduced-motion: no-preference)
